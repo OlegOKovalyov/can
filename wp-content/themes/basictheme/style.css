@@ -1,0 +1,234 @@
+/*!
+Theme Name: Basic
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: basic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Basic is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* Header */
+.site-header {
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.site-branding .custom-logo-link img {
+    display: none;
+    margin: 39px 0 32px 50px;
+}
+
+#site-navigation {
+    background-color: transparent !important;
+}
+
+.menu-menu-1-container {
+    width: 100%;
+}
+
+.menu-menu-1-container ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu-menu-1-container ul li {
+    list-style-type: none;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.menu-menu-1-container ul li:last-child {
+    margin-right: 50px;
+}
+
+.menu-menu-1-container ul li a {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+}
+
+/* Video Section 1*/
+.hero_video .vc_single_image-wrapper.vc_box_outline {
+    display: flex;
+    justify-content: center;
+}
+
+.vc_figure .vc_single_image-wrapper {
+    border: none !important;
+}
+
+.hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img {
+    border: none !important;
+    width: 800px;
+    height: 238px;
+    position: absolute;
+}
+
+/* Fill Up Section 2 */
+.bg_color_blue {
+    background-color: #284f70;
+    padding: 55px auto;
+}
+
+.paragraph_section_2 {
+    color: #fff;
+    font-size: 20px;
+    padding: 55px auto;
+    text-align: center;
+}
+
+.paragraph_section_2 p {
+    margin-bottom: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.paragraph_section_2 p:last-child {
+    padding-bottom: 50px;
+}
+
+/* Image Section 3 */
+.wpb_single_image.wpb_content_element,
+.wpb_wrapper.vc_figure,
+.vc_single_image-wrapper,
+.wpb_wrapper.vc_figure .vc_single_image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* Start Your Can Section 4 */
+.caption_text {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 25px;
+}
+.wpb_content_element {
+    margin-bottom: 0 !important;
+}
+.benefits {
+    background-color: #5e9392;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.benefits img {
+    width: 210px !important;
+    height: 200px !important;
+}
+
+.benefits figcaption {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact_btn button {
+    color: #5e9392;
+    font-size: 28px;
+}
+
+.row_center_btn .wpb_column .wpb_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row_center_btn a {
+    color: ##5e9392 !important;
+    font-size: 36px !important;
+    padding: 15px 35px !important;
+}
+
+/* Two Images Tow Texts Section 5 */
+.two_img_txt h3 {
+    font-size: 32px;
+}
+.two_img_txt p {
+    font-size: 20px;
+}
+
+.two_img_txt .vc_column_container > .vc_column-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Can 360 Experience Section 6 */
+.can_360_experience {
+    background-color: #284f70;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.can_360_experience p {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+
+/* Find Out How Section 7 */
+.find_out_how h2 {
+    color: #000;
+}
+
+.find_out_how input {
+    font-size: 24px;
+}
+
+.find_out_how .form-row>.col {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.find_out_how .wpcf7-submit {
+    background-color: #5e9392 !important;
+    border-color: #5e9392 !important;
+    font-size: 30px;
+    padding: 0.5rem 9rem;
+}
+
+.form-control-lg {
+    border: 1px solid #808080;
+    height: calc(1.7em + 1rem + 2px);
+    /*width: 90%;*/
+}
+
+.form-control-company {
+    /*width: 100%;*/
+}
+
+.mb45 {
+    margin-bottom: 45px;
+}
+
+/* Footer */
+.site-footer h5 {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 767px) {
+    .two_img_txt_next {
+        flex-direction: column-reverse;
+    }
+}

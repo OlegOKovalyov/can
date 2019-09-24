@@ -28,9 +28,16 @@
     jQuery(document).ready(function() {
         jQuery('a[href^="#section"]').click(function() {
             var target = jQuery(this).attr('href');
-            jQuery('html, body').animate({
-                scrollTop: jQuery(target).offset().top-174
-            }, 1500);
+            if (jQuery(window).width() < 1280){
+                jQuery('html, body').animate({
+                    scrollTop: jQuery(target).offset().top-74
+                }, 1500);
+            }
+            if (jQuery(window).width() > 1279){
+                jQuery('html, body').animate({
+                    scrollTop: jQuery(target).offset().top-174
+                }, 1000);
+            }
         }); // click()
         $(window).scroll(function() {
             if ($(document).scrollTop() > 10) {

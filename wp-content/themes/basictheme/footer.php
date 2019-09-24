@@ -41,7 +41,8 @@
         }); // click()
         $(window).scroll(function() {
             if ($(document).scrollTop() > 10) {
-                $("#masthead").css('background-color','#6d948c')
+                // $("#masthead").css('background-color','#6d948c')
+                $("#masthead").css('background-color','rgba(94,147,146,0.8)')
                     .css('transition', '2s');
                 $(".hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img")
                     .animate({width:'350',height:'104',left:'43',top:'-438',opacity:0,zIndex:'3'}, 10);

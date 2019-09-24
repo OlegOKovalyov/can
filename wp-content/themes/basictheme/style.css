@@ -20,6 +20,10 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Header */
 .site-header {
     display: flex;
@@ -89,7 +93,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img {
     border: none !important;
     width: 800px;
-    height: 238px;
+    height: auto;
     position: absolute;
 }
 
@@ -162,7 +166,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .row_center_btn a {
-    color: ##5e9392 !important;
+    color: #5e9392 !important;
     font-size: 36px !important;
     padding: 15px 35px !important;
 }
@@ -199,7 +203,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .find_out_how input {
+    color: #000;
+    border-color: #b3b3b3;
     font-size: 24px;
+}
+
+.find_out_how input[type=submit] {
+    color: #fff;
+}
+
+.find_out_how input::blaceholder {
+    color: #b3b3b3;
+}
+
+.find_out_how input:focus {
+    border-color: #5e9392 !important;
+    box-shadow: 0 0 0 .2rem rgba(94,147,146,.25) !important;
 }
 
 .find_out_how .form-row>.col {
@@ -217,7 +236,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .form-control-lg {
     border: 1px solid #808080;
     height: calc(1.7em + 1rem + 2px);
-    /*width: 90%;*/
 }
 
 .mb45 {
@@ -227,6 +245,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Footer */
 .site-footer h5 {
     font-size: 26px;
+}
+
+@media screen and (max-width: 576px) {
+    .can_360_experience .video_player .wpb_video_widget > .wpb_wrapper {
+        width: 100%;
+    }
+    .find_out_how .wpcf7 .form-row {
+        flex-direction: column;
+    }
+    .find_out_how .wpcf7 .form-row .col {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .find_out_how .wpcf7 .form-row .col input {
+        margin-bottom: 25px;
+    }
+    .mb45 {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -269,6 +306,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         padding-top: 50px !important;
         padding-bottom: 0 !important;
     }
+    .benefits {
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
     .paragraph_section_2 p {
         margin-bottom: 25px;
         margin-left: 15px;
@@ -277,8 +318,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     .caption_text {
         font-size: 20px;
     }
-    .benefits h2 {
+    .fill_up_can h2,
+    .benefits h2,
+    .can_360_experience h2,
+    .find_out_how h2 {
         font-size: 46px !important;
+    }
+    .can_360_experience {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .find_out_how input {
+        font-size: 18px;
+    }
+    .site-footer h5 {
+        font-size: 20px;
     }
 }
 

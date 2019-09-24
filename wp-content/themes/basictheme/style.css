@@ -197,6 +197,28 @@ body {
     padding-bottom: 45px;
 }
 
+.can_360_experience .video_player_left__one {
+    margin-right: 75px;
+    margin-left: auto;
+}
+
+.can_360_experience .video_player_left__one > .wpb_wrapper {
+    width: 720px !important;
+    height: auto;
+    float: right;
+}
+
+.can_360_experience  .video_player_right__one {
+    margin-left: 75px;
+    margin-right: auto;
+}
+
+.can_360_experience .video_player_right__one > .wpb_wrapper {
+    width: 720px !important;
+    height: auto;
+    float: left;
+}
+
 /* Find Out How Section 7 */
 .find_out_how h2 {
     color: #000;
@@ -358,5 +380,30 @@ body {
 @media (min-width: 768px) and (max-width: 1199px) {
     .find_out_how .wpb_column.vc_column_container {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1670px) {
+    .can_360_experience .video_player_left__one {
+        /*margin-right: 75px;*/
+        /*margin-left: auto;*/
+        margin: auto 15px;
+    }
+    .can_360_experience .video_player_left__one > .wpb_wrapper {
+        width: 70% !important;
+        height: auto;
+        /*float: right;*/
+    }
+
+    .can_360_experience  .video_player_right__one {
+        /*margin-left: 75px;*/
+        /*margin-right: auto;*/
+        margin: auto 15px;
+    }
+
+    .can_360_experience .video_player_right__one > .wpb_wrapper {
+        width: 70% !important;
+        height: auto;
+        /*float: left;*/
     }
 }

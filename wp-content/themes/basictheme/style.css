@@ -69,8 +69,7 @@ body {
     border: 1px solid #fff;
     border-radius: 3px;
     color: #fff;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 24px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -269,6 +268,14 @@ body {
     font-size: 26px;
 }
 
+@media screen and (max-width: 480px) {
+    .can_360_experience .video_player_left .video_player_left__one > .wpb_wrapper,
+    .can_360_experience .video_player_right .video_player_right__one > .wpb_wrapper{
+        width: 100% !important;
+        /*height: auto;*/
+    }
+}
+
 @media screen and (max-width: 576px) {
     .can_360_experience .video_player .wpb_video_widget > .wpb_wrapper {
         width: 100%;
@@ -292,6 +299,10 @@ body {
     .two_img_txt_next {
         flex-direction: column-reverse;
     }
+    .can_360_experience .video_player_left__one,
+    .can_360_experience .video_player_right__one{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -299,8 +310,10 @@ body {
         background-color: transparent;
         border-color: rgba(0, 0, 0, .1);
     }
-    .menu-menu-1-container {
-        background-color: rgba(109, 148, 140, 0.8);
+    /*.menu-menu-1-container {*/
+    .navbar-collapse.collapse.show {
+        /*background-color: rgba(109, 148, 140, 0.8);*/
+        background-color: rgba(94, 147, 146, 0.6);
     }
     .menu-menu-1-container ul {
         flex-direction: column;

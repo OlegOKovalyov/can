@@ -119,9 +119,9 @@ body {
 }
 
 /* Image Section 3 */
-.wpb_single_image.wpb_content_element,
-.wpb_wrapper.vc_figure,
-.vc_single_image-wrapper,
+/*.wpb_single_image.wpb_content_element,*/
+/*.wpb_wrapper.vc_figure,*/
+/*.vc_single_image-wrapper,*/
 .wpb_wrapper.vc_figure .vc_single_image-wrapper img {
     width: 100%;
     height: auto;
@@ -143,8 +143,8 @@ body {
 }
 
 .benefits img {
-    width: 210px !important;
-    height: 200px !important;
+    width: 310px !important;
+    height: auto !important;
 }
 
 .benefits figcaption {
@@ -295,6 +295,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .benefits .vc_custom_1569419519095,
+    .benefits .vc_custom_1569419606138,
+    .benefits .vc_custom_1569419527684{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
     .two_img_txt_next {
         flex-direction: column-reverse;
     }

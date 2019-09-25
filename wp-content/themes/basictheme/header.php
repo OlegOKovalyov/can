@@ -26,7 +26,7 @@
             </div><!-- .site-branding -->
         </div>
         <!-- Navigation -->
-        <nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-light primary-menu w-100" style="background-color: #b1cbd8;">
+        <nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark primary-menu w-100" style="background-color: #b1cbd8;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

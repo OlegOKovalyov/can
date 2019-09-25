@@ -93,10 +93,9 @@ body {
     border: none !important;
     width: 800px;
     height: auto;
-    /*position: absolute;*/
 }
 
-/* Fill Up Section 2 */
+/* Fill Up can Section 2 */
 .bg_color_blue {
     background-color: #284f70;
     padding: 55px auto;
@@ -309,6 +308,7 @@ body {
     .navbar-light .navbar-toggler {
         background-color: transparent;
         border-color: rgba(0, 0, 0, .1);
+        color: #fff;
     }
     /*.menu-menu-1-container {*/
     .navbar-collapse.collapse.show {
@@ -337,9 +337,12 @@ body {
         display: flex;
         justify-content: flex-end;
     }
+    .hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img {
+        margin: 0 35px;
+    }
     .fill_up_can .vc_custom_1569243577159 {
-        padding-top: 50px !important;
-        padding-bottom: 0 !important;
+        /*padding-top: 50px !important;*/
+        /*padding-bottom: 0 !important;*/
     }
     .benefits {
         padding-top: 25px;

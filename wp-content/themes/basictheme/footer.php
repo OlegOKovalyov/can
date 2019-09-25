@@ -26,7 +26,8 @@
 
 <script>
     jQuery(document).ready(function() {
-        jQuery('a[href^="#section"]').click(function() {
+        jQuery('a[href^="#section"]').click(function(event) {
+            event.preventDefault();
             var target = jQuery(this).attr('href');
             if (jQuery(window).width() < 1280){
                 jQuery('html, body').animate({

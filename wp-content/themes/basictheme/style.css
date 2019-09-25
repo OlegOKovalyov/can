@@ -93,7 +93,7 @@ body {
     border: none !important;
     width: 800px;
     height: auto;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 /* Fill Up Section 2 */

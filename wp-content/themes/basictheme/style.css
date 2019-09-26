@@ -37,6 +37,7 @@ body {
 
 .site-header .logo {
     position: fixed;
+    z-index: 3;
 }
 
 .site-branding .custom-logo-link img {

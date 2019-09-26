@@ -24,6 +24,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.display_none_class {
+    display: none;
+}
+
 /* Header */
 .site-header {
     display: flex;
@@ -121,13 +125,13 @@ body {
 /* Fill Up can Section 2 */
 .bg_color_blue {
     background-color: #284f70;
-    padding: 55px auto;
+    /*padding: 55px auto;*/
 }
 
 .paragraph_section_2 {
     color: #fff;
     font-size: 20px;
-    padding: 55px auto;
+    /*padding: 55px auto;*/
     text-align: center;
 }
 
@@ -252,7 +256,7 @@ body {
     color: #fff;
 }
 
-.find_out_how input::blaceholder {
+.find_out_how input::placeholder {
     color: #b3b3b3;
 }
 
@@ -295,6 +299,11 @@ body {
     .can_360_experience .video_player_left .video_player_left__one > .wpb_wrapper,
     .can_360_experience .video_player_right .video_player_right__one > .wpb_wrapper{
         width: 100% !important;
+    }
+    .find_out_how input[type=submit] {
+        width: 70%;
+        margin: 0 auto;
+        display: inherit;
     }
 }
 
@@ -396,7 +405,10 @@ body {
     .caption_text {
         font-size: 20px;
     }
-    #tagh2 {
+    #section2 .tagh2,
+    #section4 .tagh2,
+    #section6 .tagh2,
+    #section7 .tagh2 {
         font-size: 36px !important;
     }
     .can_360_experience {

@@ -40,8 +40,15 @@ body {
 }
 
 .site-branding .custom-logo-link img {
-    display: none;
-    margin: 39px 0 32px 50px;
+    /*display: none;*/
+    /*margin: 39px 0 32px 50px;*/
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 #site-navigation {
@@ -89,6 +96,16 @@ body {
     justify-content: center;
 }
 
+.hero_video #video_background {
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+}
+
 .vc_figure .vc_single_image-wrapper {
     border: none !important;
 }
@@ -97,6 +114,9 @@ body {
     border: none !important;
     width: 800px;
     height: auto;
+}
+.hero_video .wpb_raw_code.wpb_content_element.wpb_raw_html .wpb_wrapper {
+    margin-bottom: -10px;
 }
 
 /* Fill Up can Section 2 */
@@ -272,6 +292,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .site-branding .custom-logo-link img {
+        width: 280px;
+        height: auto;
+    }
     .can_360_experience .video_player_left .video_player_left__one > .wpb_wrapper,
     .can_360_experience .video_player_right .video_player_right__one > .wpb_wrapper{
         width: 100% !important;
@@ -319,8 +343,12 @@ body {
 @media screen and (max-width: 991px) {
     .site-header .logo {
         /*position: fixed;*/
-        width: 50%;
-        margin: 6px;
+        /*width: 50%;*/
+        /*margin: 6px;*/
+    }
+    .site-branding .custom-logo-link img {
+        width: 350px;
+        height: auto;
     }
     .navbar-light .navbar-toggler {
         background-color: transparent;
@@ -342,6 +370,8 @@ body {
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
+        background: rgba(255,255,255,0.2);
+        padding: 5px 0;
     }
     .menu-menu-1-container ul li:last-child {
         margin-right: 0;
@@ -396,16 +426,16 @@ body {
         height: 80px;
     }
     .site-branding .custom-logo-link img {
-        width: 50%;
-        height: 50%;
-        margin: 18px;
+        /*width: 50%;*/
+        /*height: 50%;*/
+        /*margin: 18px;*/
     }
     .menu-menu-1-container ul li {
         /*margin-right: 15px;*/
         /*margin-top: 32px;*/
         /*margin-bottom: 15px;*/
-        background: rgba(255,255,255,0.2);
-        padding: 5px 0;
+        /*background: rgba(255,255,255,0.2);*/
+        /*padding: 5px 0;*/
     }
     .menu-menu-1-container ul li a {
         font-size: 16px;

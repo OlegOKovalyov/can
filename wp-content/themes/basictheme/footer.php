@@ -31,34 +31,89 @@
             var target = jQuery(this).attr('href');
             if (jQuery(window).width() < 1280){
                 jQuery('html, body').animate({
-                    scrollTop: jQuery(target).offset().top-74
+                    scrollTop: jQuery(target).offset().top-79
                 }, 1500);
             }
             if (jQuery(window).width() > 1279){
                 jQuery('html, body').animate({
-                    scrollTop: jQuery(target).offset().top-174
+                    scrollTop: jQuery(target).offset().top-162
                 }, 1000);
             }
         }); // click()
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 10) {
-                $("#masthead").css('background-color','rgba(94,147,146,0.8)')
-                    .css('transition', '2s');
-                $(".hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img")
-                    .css({display:'block', position: 'absolute'})
-                    .css('transition', '0.5s')
-                    .animate({width:'350px',height:'auto',left:'50px',top:'-330px',opacity:'0',zIndex:'3'}, 0);
-                $(".site-branding .custom-logo-link img")
-                    .fadeIn(5000);
-            } else {
-                $("#masthead").css('background-color', 'transparent')
-                    .css('transition', '1s');
-                $(".hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img")
-                    .css('transition', '2s');
-                $(".site-branding .custom-logo-link img")
-                    .fadeOut(1500);
+            if (jQuery(window).width() > 1280) {
+                if ($(document).scrollTop() > 10) {
+                    $("#masthead").css('background-color', 'rgba(94,147,146,0.8)')
+                        .css('transition', '2.5s');
+                    $(".site-branding .custom-logo-link img")
+                        .css('display', 'block')
+                        .animate({
+                            width: '350px',
+                            height: '104px',
+                            top: '80px',
+                            left: '210px',
+                            opacity: '0.8',
+                            zIndex: '3'
+                        }, 1500);
+                } else {
+                    $("#masthead").css('background-color', 'transparent')
+                        .css('transition', '1s');
+                    $(".site-branding .custom-logo-link img")
+                        .css('display', 'none')
+                        .css('transition', '2s');
+                        // .fadeOut(300);
+                }
             }
+            if (jQuery(window).width() <= 1280) {
+                $("#masthead").css('background-color', 'rgba(94,147,146,0.8)')
+                    .css('transition', '2s');
+                $(".site-branding .custom-logo-link img")
+                    .animate({
+                        width: '175px',
+                        height: '52px',
+                        top: '35px',
+                        left: '100px',
+                        opacity: '0.8',
+                        zIndex: '3'
+                    }, 1500);
+            }
+            if (jQuery(window).width() <= 480) {
+                $(".site-branding .custom-logo-link img")
+                    .css({
+                        width: '280px',
+                        height: 'auto',
+                    })
+                    .animate({
+                        width: '175px',
+                        height: '52px',
+                        top: '35px',
+                        left: '100px',
+                        opacity: '0.8',
+                        zIndex: '3'
+                    }, 1500);
+            }
+
         }); // scroll()
+
+        // $(window).scroll(function() {
+        //     if ($(document).scrollTop() > 10) {
+        //         $("#masthead").css('background-color','rgba(94,147,146,0.8)')
+        //             .css('transition', '2s');
+        //         $(".hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img")
+        //             .css({display:'block', position: 'absolute'})
+        //             .css('transition', '0.5s')
+        //             .animate({width:'350px',height:'auto',left:'50px',top:'-330px',opacity:'0',zIndex:'3'}, 0);
+        //         $(".site-branding .custom-logo-link img")
+        //             .fadeIn(5000);
+        //     } else {
+        //         $("#masthead").css('background-color', 'transparent')
+        //             .css('transition', '1s');
+        //         $(".hero_video .wpb_wrapper.vc_figure .vc_single_image-wrapper img")
+        //             .css('transition', '2s');
+        //         $(".site-branding .custom-logo-link img")
+        //             .fadeOut(1500);
+        //     }
+        // }); // scroll()
     }); // ready()
 </script>
 

@@ -46,7 +46,6 @@
                     $("#masthead").css('background-color', 'rgba(94,147,146,0.8)')
                         .css('transition', '2.5s');
                     $(".site-branding .custom-logo-link img")
-                        .css('display', 'block')
                         .animate({
                             width: '350px',
                             height: '104px',
@@ -58,10 +57,6 @@
                 } else {
                     $("#masthead").css('background-color', 'transparent')
                         .css('transition', '1s');
-                    $(".site-branding .custom-logo-link img")
-                        .css('display', 'none')
-                        .css('transition', '2s');
-                        // .fadeOut(300);
                 }
             }
             if (jQuery(window).width() <= 1280) {
